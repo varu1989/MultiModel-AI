@@ -1,0 +1,139 @@
+{
+  "identity": {
+    "name": "JaipurEyeVision Studio",
+    "persona": "The Neon Architect",
+    "description": "A high-fidelity, cinematic AI platform that blends the vibrancy of Jaipur with futuristic precision. Dark mode first, neon accents, glassmorphic surfaces.",
+    "emotional_tone": "Powerful, Creative, Limitless, Sharp"
+  },
+  "typography": {
+    "font_family": {
+      "headings": "Outfit, sans-serif",
+      "body": "Plus Jakarta Sans, sans-serif",
+      "mono": "JetBrains Mono, monospace",
+      "accent": "Syne, sans-serif"
+    },
+    "scale": {
+      "h1": "text-5xl md:text-7xl font-bold tracking-tight leading-none",
+      "h2": "text-4xl md:text-5xl font-semibold tracking-tight",
+      "h3": "text-2xl md:text-3xl font-semibold",
+      "body_lg": "text-lg leading-relaxed text-muted-foreground",
+      "body_base": "text-base leading-relaxed text-muted-foreground",
+      "caption": "text-sm text-muted-foreground font-medium uppercase tracking-widest"
+    },
+    "installation": "Ensure 'Outfit', 'Plus Jakarta Sans', and 'Syne' are imported from Google Fonts in index.css"
+  },
+  "colors": {
+    "theme_mode": "dark",
+    "palette": {
+      "background": "#030014",
+      "foreground": "#E2E8F0",
+      "card": "rgba(15, 23, 42, 0.6)",
+      "card_foreground": "#FFFFFF",
+      "primary": "#D946EF",
+      "primary_foreground": "#FFFFFF",
+      "secondary": "#7C3AED",
+      "secondary_foreground": "#FFFFFF",
+      "accent": "#00F0FF",
+      "accent_foreground": "#000000",
+      "destructive": "#FF3366",
+      "border": "rgba(255, 255, 255, 0.1)",
+      "input": "rgba(255, 255, 255, 0.05)",
+      "ring": "#D946EF"
+    },
+    "gradients": {
+      "hero_glow": "radial-gradient(circle at center, rgba(217, 70, 239, 0.15) 0%, rgba(3, 0, 20, 0) 70%)",
+      "glass_surface": "linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.0) 100%)",
+      "neon_border": "linear-gradient(90deg, #D946EF, #00F0FF)"
+    },
+    "forbidden_colors": [
+      "#7351B7",
+      "#1B93A4",
+      "#000000"
+    ]
+  },
+  "layout": {
+    "spacing_scale": "relaxed",
+    "container_padding": "px-6 md:px-12 lg:px-24",
+    "grid_system": "bento",
+    "border_radius": {
+      "outer": "rounded-3xl",
+      "inner": "rounded-xl",
+      "button": "rounded-full"
+    },
+    "z_index_layers": {
+      "background": "-10",
+      "content": "10",
+      "sticky_nav": "50",
+      "modal": "100",
+      "toast": "1000"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-white hover:bg-primary/90 shadow-[0_0_20px_-5px_rgba(217,70,239,0.5)] transition-all active:scale-95",
+      "secondary": "bg-secondary/20 text-secondary-foreground hover:bg-secondary/30 border border-secondary/50",
+      "ghost": "hover:bg-white/5 text-foreground hover:text-primary",
+      "outline": "border border-input bg-transparent hover:bg-accent hover:text-accent-foreground"
+    },
+    "cards": {
+      "glass": "bg-black/40 backdrop-blur-xl border border-white/10 shadow-2xl",
+      "solid": "bg-card border border-border/50",
+      "hover_effect": "hover:border-primary/50 transition-colors duration-300 group"
+    },
+    "inputs": {
+      "default": "bg-white/5 border-white/10 focus:border-primary focus:ring-1 focus:ring-primary/50 placeholder:text-muted-foreground/50 h-12"
+    }
+  },
+  "visual_enhancers": {
+    "noise_overlay": "fixed inset-0 w-full h-full pointer-events-none z-[9999] opacity-[0.03] bg-[url('https://grainy-gradients.vercel.app/noise.svg')]",
+    "glassmorphism": "backdrop-blur-md bg-opacity-70 border border-white/10",
+    "glow_effects": "shadow-[0_0_30px_-5px_var(--tw-shadow-color)]",
+    "animations": {
+      "hover_lift": "hover:-translate-y-1 transition-transform duration-300",
+      "fade_in": "animate-in fade-in zoom-in-95 duration-500",
+      "marquee": "slow continuous scroll for logos/tags"
+    }
+  },
+  "image_urls": {
+    "hero_background": "https://images.unsplash.com/photo-1763259743121-2c66efa86b7a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNDR8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMG5lb24lMjBBSSUyMG5ldXJhbCUyMG5ldHdvcmslMjB2aXN1YWxpemF0aW9ufGVufDB8fHx8MTc3MjA4OTc3MXww&ixlib=rb-4.1.0&q=85",
+    "feature_workspace": "https://images.unsplash.com/photo-1760278041881-e64e501d009c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzB8MHwxfHNlYXJjaHwxfHxmdXR1cmlzdGljJTIwbWluaW1hbCUyMHdvcmtzcGFjZSUyMGRlc2slMjBzZXR1cCUyMGRhcmslMjBtb2RlfGVufDB8fHx8MTc3MjA4OTc3MXww&ixlib=rb-4.1.0&q=85",
+    "feature_collaboration": "https://images.pexels.com/photos/8849283/pexels-photo-8849283.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "feature_creative": "https://images.pexels.com/photos/28448359/pexels-photo-28448359.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "logo_placeholder": "https://via.placeholder.com/150x50?text=LOGO"
+  },
+  "libraries": {
+    "charts": "recharts",
+    "icons": "lucide-react",
+    "animations": "framer-motion",
+    "3d": "react-three-fiber (only for hero if needed, otherwise CSS glows)",
+    "notifications": "sonner"
+  },
+  "instructions_to_main_agent": [
+    "Install 'framer-motion', 'clsx', 'tailwind-merge' if not present.",
+    "Use 'lucide-react' for all icons.",
+    "Implement a 'ThemeToggle' but default to DARK mode.",
+    "For the Dashboard Sidebar, use a collapsible glassmorphic design.",
+    "For the Landing Page, use the 'Bento Grid' layout for features.",
+    "Ensure all forms use 'react-hook-form' with 'zod' validation.",
+    "Use the provided image URLs for specific sections.",
+    "Do NOT use gradients for text unless it's a very large heading.",
+    "Add the noise overlay to the body to give a film-grain texture.",
+    "Use 'Outfit' font for all Headings (h1-h6) and 'Plus Jakarta Sans' for body.",
+    "The primary color #D946EF (Pink) is for high-priority CTAs only. Use #7C3AED (Violet) for secondary actions."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "You tend to converge toward generic, 'on distribution' outputs. Avoid this.",
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients.",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Use glass-morphism effects with backdrop filters (12-24px blur).",
+    "You MUST NOT apply universal transition. Eg: 'transition: all'. This results in breaking transforms.",
+    "You MUST NOT center align the app container.",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations.",
+    "NEVER use AI assistant Emoji characters like 🤖🧠 for icons.",
+    "Every interaction needs micro-animations - hover states, transitions.",
+    "Use 2-3x more spacing than feels comfortable.",
+    "Subtle grain textures, noise overlays, custom cursors: separates good from extraordinary.",
+    "Missing categories (especially sponsor logos) = main agent will use placeholder text which is FORBIDDEN."
+  ]
+}
