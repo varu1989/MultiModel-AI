@@ -67,6 +67,39 @@ const BillingPage = () => {
           theme: {
             color: '#D946EF',
           },
+          config: {
+            display: {
+              blocks: {
+                utib: {
+                  name: "Pay using UPI QR",
+                  instruments: [
+                    {
+                      method: "upi",
+                      flows: ["qr"],
+                      apps: ["google_pay", "phonepe", "paytm"]
+                    }
+                  ]
+                },
+                other: {
+                  name: "Other Payment Methods",
+                  instruments: [
+                    { method: "card" },
+                    { method: "netbanking" },
+                    { method: "wallet" },
+                    { method: "upi", flows: ["collect", "intent"] }
+                  ]
+                }
+              },
+              sequence: ["block.utib", "block.other"],
+              preferences: {
+                show_default_blocks: false
+              }
+            }
+          },
+          modal: {
+            confirm_close: true,
+            escape: false
+          }
         };
 
         const rzp = new window.Razorpay(options);

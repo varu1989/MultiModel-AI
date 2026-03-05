@@ -117,9 +117,20 @@ Build a complete production-ready multimodal AI SaaS platform named JaipurEyeVis
 - [ ] Team/organization support
 - [ ] API key management for external access
 
+## Deployment Configuration (Added Feb 26, 2026)
+- Railway configuration: `/app/backend/railway.toml`, `Procfile`
+- Vercel configuration: `/app/frontend/vercel.json`
+- Environment examples: `.env.example` files in both directories
+- Full deployment guide: `/app/DEPLOYMENT_GUIDE.md`
+
+### Razorpay QR Code Payment
+- UPI QR code enabled in checkout configuration
+- Supports: Google Pay, PhonePe, Paytm via QR
+- Also supports: Cards, Netbanking, Wallets, UPI Collect
+
 ## Next Tasks
 1. Test actual AI generation flows with real prompts
-2. Add Razorpay webhook verification
+2. Add Razorpay webhook endpoint for async events
 3. Implement rate limiting
 4. Add email notifications
-5. Deploy to production (Railway + Vercel)
+5. Deploy to production (Railway + Vercel) - Guide ready!
